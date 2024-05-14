@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -24,7 +25,7 @@
                                 <rect key="frame" x="68.666666666666686" y="298" width="256" height="256"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="MindfulMate" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ic-M8-yP8">
-                                <rect key="frame" x="89.666666666666686" y="528" width="214" height="53.666666666666629"/>
+                                <rect key="frame" x="89.666666666666686" y="527.33333333333337" width="214" height="53.666666666666629"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="36"/>
@@ -39,7 +40,7 @@
                             <constraint firstAttribute="bottom" secondItem="ynG-MM-OYk" secondAttribute="bottom" id="Iu1-k6-qWg"/>
                             <constraint firstItem="Lf3-bv-FcH" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="N8l-vz-RE0"/>
                             <constraint firstItem="ynG-MM-OYk" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="fKP-He-bUL"/>
-                            <constraint firstItem="2Ic-M8-yP8" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="128.66999999999999" id="gKI-TO-ptB"/>
+                            <constraint firstItem="2Ic-M8-yP8" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="128" id="gKI-TO-ptB"/>
                             <constraint firstItem="Lf3-bv-FcH" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="kU0-ps-c0F"/>
                             <constraint firstItem="ynG-MM-OYk" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="lWD-hQ-7wW"/>
                         </constraints>

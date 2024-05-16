@@ -17,7 +17,9 @@ class ViewController: UIViewController {
         timeLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .none, timeStyle: .short)
         
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector:#selector(self.tick) , userInfo: nil, repeats: true)
-//        userLoggedIn ? welcomeName.text = "Welcome, \(firstName)" : welcomeName.text = "Welcome! Please sign in."
+        
+        greeting()
+        
         
     }
     // ----------IBOutlets----------
@@ -32,26 +34,61 @@ class ViewController: UIViewController {
     var userLoggedIn = true
     
     
-   @objc func greeting() {
-        if (userLoggedIn == true){
-           welcomeName.text = "Welcome, \(firstName)"
-            
-//            print("Logged in.")
-    }   else {
-            welcomeName.text = "Welcome! Please log in to continue."
-//            print("Please log in.")
-        }
-        
-    }
 
-    
-    
-    
+//    WELCOME CONTAINER
+
     @objc func tick() {
         dateLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .short, timeStyle: .none)
         timeLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .none, timeStyle: .short)
     }
     
+    func greeting(){
+        welcomeName.text = "Welcome, \(firstName)!"
+    }
 }
 
+
+
+
+
+
+
+//   func greeting() {
+//        if (userLoggedIn == true){
+//           welcomeName.text = "Welcome, \(firstName)"
+//
+////            print("Logged in.")
+//        }   else if (userLoggedIn == false) { welcomeName.text = "Welcome! Please log in to continue."
+////            print("Please log in.")
+//        } else{
+//            print("Error")
+//        }
+//
+//    }
+    
+//    func greeting(){
+//        if (userLoggedIn){
+//            welcomeName.text = "Welcome, \(firstName)"
+//        } else if (!(userLoggedIn)){
+//            welcomeName.text = "Please log in to continue!"
+//        }
+//    }
+
+//func greeting(){
+//            func greeting() {
+//                    if (userLoggedIn == true){
+//                       welcomeName.text = "Welcome, \(firstName)"
+//
+//            //            print("Logged in.")
+//                    }   else if (userLoggedIn == false) { welcomeName.text = "Welcome! Please log in to continue."
+//            //            print("Please log in.")
+//                    } else{
+//                        print("Error")
+//                    }
+//
+//                }
+//        }
+//        greeting()
+
+//     userLoggedIn ? welcomeName.text = "Welcome, \(firstName)" : welcomeName.text = "Welcome! Please sign in."
 

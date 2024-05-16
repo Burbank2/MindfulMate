@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     }
     
     func greeting(){
-        welcomeName.text = "Welcome, \(firstName)!"
+        welcomeName.text = "Welcome, \n\(firstName)!"
     }
 }
 

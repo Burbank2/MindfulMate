@@ -13,6 +13,7 @@
 		275824832B99FBF300407F68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275824812B99FBF300407F68 /* Main.storyboard */; };
 		275824852B99FBF400407F68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275824842B99FBF400407F68 /* Assets.xcassets */; };
 		275824882B99FBF400407F68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275824862B99FBF400407F68 /* LaunchScreen.storyboard */; };
+		27674FCB2BF6A97600EBBE9B /* mindfulmate_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 27674FCA2BF6A97600EBBE9B /* mindfulmate_background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		275824842B99FBF400407F68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		275824872B99FBF400407F68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		275824892B99FBF400407F68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27674FCA2BF6A97600EBBE9B /* mindfulmate_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mindfulmate_background.png; sourceTree = "<group>"; };
 		2775EB852BF63EB200EAA5BC /* MindfulMate_Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MindfulMate_Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -65,6 +67,7 @@
 				275824842B99FBF400407F68 /* Assets.xcassets */,
 				275824862B99FBF400407F68 /* LaunchScreen.storyboard */,
 				275824892B99FBF400407F68 /* Info.plist */,
+				27674FCA2BF6A97600EBBE9B /* mindfulmate_background.png */,
 			);
 			path = MindfulMate;
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 			files = (
 				275824882B99FBF400407F68 /* LaunchScreen.storyboard in Resources */,
 				275824852B99FBF400407F68 /* Assets.xcassets in Resources */,
+				27674FCB2BF6A97600EBBE9B /* mindfulmate_background.png in Resources */,
 				275824832B99FBF300407F68 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

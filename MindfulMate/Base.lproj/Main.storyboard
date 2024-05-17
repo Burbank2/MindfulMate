@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
@@ -20,8 +20,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BKg-q2-g1V" userLabel="mainContainer">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="oLX-Ag-WCp" userLabel="containerOne">
-                                        <rect key="frame" x="60" y="102.00000000000001" width="270" height="176.33333333333337"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mindfulmate_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="e4P-lr-svW">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oLX-Ag-WCp" userLabel="containerOne">
+                                        <rect key="frame" x="60" y="102.00000000000001" width="270" height="173.33333333333337"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8Wh-9P-QVr" userLabel="dateTime">
                                                 <rect key="frame" x="62.333333333333329" y="0.0" width="145.33333333333337" height="71.666666666666671"/>
@@ -41,7 +44,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="7ef-Fa-UtC" userLabel="name">
-                                                <rect key="frame" x="54" y="104.66666666666666" width="162" height="71.666666666666657"/>
+                                                <rect key="frame" x="54" y="101.66666666666666" width="162" height="71.666666666666657"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Welcome, \(name)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nB-jB-taw" userLabel="name">
                                                         <rect key="frame" x="0.0" y="0.0" width="162" height="71.666666666666671"/>
@@ -53,19 +56,49 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WOd-ix-jrk">
+                                        <rect key="frame" x="8" y="463" width="374" height="319"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Task 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDB-H8-JXH">
+                                                <rect key="frame" x="0.0" y="8" width="374" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Task 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIy-SL-da0">
+                                                <rect key="frame" x="0.0" y="64" width="374" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Task 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgA-ZF-qzh">
+                                                <rect key="frame" x="0.0" y="120" width="374" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Today's Tasks" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1j1-bd-LQY">
-                                        <rect key="frame" x="0.0" y="405" width="390" height="34"/>
+                                        <rect key="frame" x="8" y="405" width="191" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.56064832182873148" green="0.54682185374149672" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="oLX-Ag-WCp" firstAttribute="top" secondItem="BKg-q2-g1V" secondAttribute="top" constant="102" id="TXy-Zt-sgW"/>
                                     <constraint firstAttribute="trailing" secondItem="oLX-Ag-WCp" secondAttribute="trailing" constant="60" id="U4g-et-7a7"/>
+                                    <constraint firstAttribute="trailing" secondItem="e4P-lr-svW" secondAttribute="trailing" id="Ucr-gb-UVs"/>
+                                    <constraint firstItem="e4P-lr-svW" firstAttribute="leading" secondItem="BKg-q2-g1V" secondAttribute="leading" id="eaX-oM-uw9"/>
+                                    <constraint firstAttribute="bottom" secondItem="e4P-lr-svW" secondAttribute="bottom" id="mtU-d5-WUV"/>
                                     <constraint firstItem="oLX-Ag-WCp" firstAttribute="leading" secondItem="BKg-q2-g1V" secondAttribute="leading" constant="60" id="qzS-hE-Oo9"/>
+                                    <constraint firstItem="e4P-lr-svW" firstAttribute="top" secondItem="BKg-q2-g1V" secondAttribute="top" id="yyH-xe-VY7"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -90,6 +123,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="mindfulmate_background.png" width="768" height="768"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

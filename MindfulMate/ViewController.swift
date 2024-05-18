@@ -17,7 +17,13 @@ class ViewController: UIViewController {
         timeLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .none, timeStyle: .short)
         
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector:#selector(self.tick) , userInfo: nil, repeats: true)
-        
+        func greeting(){
+            if (userLoggedIn){
+                welcomeName.text = "Welcome, \(firstName)"
+            } else if (!(userLoggedIn)){
+                welcomeName.text = "Please log in to continue!"
+            }
+        }
         greeting()
         
         
@@ -42,9 +48,9 @@ class ViewController: UIViewController {
         timeLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .none, timeStyle: .short)
     }
     
-    func greeting(){
-        welcomeName.text = "Welcome, \n\(firstName)!"
-    }
+//    func greeting(){
+//        welcomeName.text = "Welcome, \n\(firstName)!"
+//    }
 }
 
 

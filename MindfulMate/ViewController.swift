@@ -35,6 +35,8 @@ class ViewController: UIViewController {
                 welcomeName.text = "Unknown Error. Please try again later!"
             }
         }
+        
+        
         greeting()
         
         }

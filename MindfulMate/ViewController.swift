@@ -8,24 +8,34 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         //Looks for single or multiple taps.
-             let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-
-            //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
-            //tap.cancelsTouchesInView = false
-
-            view.addGestureRecognizer(tap)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+        //tap.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tap)
         dateLabel.text = DateFormatter.localizedString(from:    Date(), dateStyle: .short, timeStyle: .none)
         
         timeLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .none, timeStyle: .short)
         
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector:#selector(self.tick) , userInfo: nil, repeats: true)
-            
+        
+        //        func greeting(){
+        //            if (userLoggedIn){
+        //                welcomeName.text = "Welcome," + "\n" + "\(firstName)"
+        //            } else if (!(userLoggedIn)){
+        //                welcomeName.text = "Please log in to continue!"
+        //            } else{
+        //                welcomeName.text = "Unknown Error. Please try again later!"
+        //            }
+        //        }
+        
         func greeting(){
             if (userLoggedIn){
                 welcomeName.text = "Welcome," + "\n" + "\(firstName)"
@@ -35,6 +45,16 @@ class ViewController: UIViewController {
                 welcomeName.text = "Unknown Error. Please try again later!"
             }
         }
+        
+//        func greeting(){
+//            if (userLoggedIn){
+//                welcomeName.text = "Welcome," + "\n" + "\(firstName)"
+//            } else if (!(userLoggedIn)){
+//                welcomeName.text = "Please log in to continue!"
+//            } else{
+//                welcomeName.text = "Unknown Error. Please try again later!"
+//            }
+//        }
         
         
         greeting()

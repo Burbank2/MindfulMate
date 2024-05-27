@@ -95,7 +95,7 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rLw-ca-C75">
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rLw-ca-C75" userLabel="hrView">
                                                 <rect key="frame" x="51" y="66" width="290" height="10"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.81568627450980391" green="0.12156862745098039" blue="0.12156862745098039" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
@@ -106,11 +106,11 @@
                                         <rect key="frame" x="22" y="425" width="349" height="95"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KLh-HS-obT">
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KLh-HS-obT" userLabel="calendarCountContainer">
                                                 <rect key="frame" x="0.0" y="0.0" width="101" height="95"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUa-1x-y1z">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUa-1x-y1z" userLabel="eventCount">
                                                         <rect key="frame" x="29" y="27" width="42" height="41"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="64"/>
@@ -119,6 +119,10 @@
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.81568627450980391" green="0.12156862745098039" blue="0.12156862745098039" alpha="0.26000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="3"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14y-3L-2UJ">
                                                 <rect key="frame" x="128" y="27" width="235.66666666666663" height="41"/>
@@ -139,11 +143,11 @@
                                         <rect key="frame" x="22" y="571" width="349" height="95"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4sz-s9-kni">
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4sz-s9-kni" userLabel="taskCountContainer">
                                                 <rect key="frame" x="0.0" y="0.0" width="101" height="95"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmT-2Y-Qyr">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmT-2Y-Qyr" userLabel="taskCount">
                                                         <rect key="frame" x="29" y="27" width="42" height="41"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="64"/>
@@ -152,6 +156,10 @@
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.81568627449999997" green="0.1215686275" blue="0.1215686275" alpha="0.26000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="3"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjv-Sq-hHp">
                                                 <rect key="frame" x="128" y="27" width="235.66666666666663" height="41"/>
@@ -191,6 +199,7 @@
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="lD6-UZ-T5P" id="T5K-5Z-y4U"/>
+                        <outlet property="eventTaskContainers" destination="4sz-s9-kni" id="yUv-GE-1ff"/>
                         <outlet property="timeLabel" destination="P8H-P3-dGZ" id="4M7-rp-lF7"/>
                         <outlet property="welcomeName" destination="3nB-jB-taw" id="K0J-oh-Qfb"/>
                     </connections>
